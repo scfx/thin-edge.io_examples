@@ -102,7 +102,7 @@ class Connector(object):
             logger.debug('Response from request with code : ' + str(response.status_code))
             if response.status_code == 204:
                 logger.debug('Flow created')
-                return response.text
+                return True
             else:
                 logger.warning(f'Response from request: {response.text}')
                 logger.warning(f'Got response with status_code: {response.status_code}')
