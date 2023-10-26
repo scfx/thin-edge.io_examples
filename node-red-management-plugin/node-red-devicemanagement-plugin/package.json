@@ -1,9 +1,9 @@
 {
   "name": "node-red-device-plugin",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "This Plug-in adds an tab to the device context to deploy flows via operations:",
   "scripts": {
-    "start": "c8ycli server -u https://mbay.eu-latest.cumulocity.com",
+    "start": "c8ycli server -u $C8Y_URL",
     "start:shell": "npm start -- --shell devicemanagement",
     "build": "c8ycli build",
     "deploy": "c8ycli deploy",
@@ -29,7 +29,7 @@
     "rxjs": "~6.6.3",
     "zone.js": "~0.11.4",
     "@c8y/style": "1016.0.194",
-    "ngx-bootstrap":"9.0.0"
+    "ngx-bootstrap": "9.0.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "14.0.6",

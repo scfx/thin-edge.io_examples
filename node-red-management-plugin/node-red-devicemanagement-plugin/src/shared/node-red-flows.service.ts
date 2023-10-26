@@ -107,10 +107,10 @@ export class NodeRedFlowService {
         console.log(flowMo)
         return {
             c8yFlowId: mo.name,
-            info: flowMo.full.info,
+            info: flowMo?.full?.info ? flowMo.full.info : "",
             updated: mo.lastUpdated,
             localFlowId: externalId.externalId,
-            label: flowMo.full.label,
+            label: flowMo?.full? flowMo.full.label : "",
             id: mo.id
         }
     }
